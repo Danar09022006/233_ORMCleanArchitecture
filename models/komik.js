@@ -5,7 +5,16 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
       primaryKey: true,
     },
-     title: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    description: {
+      type: DataTypes.TEXT,
+    },
+    author: {
+      type: DataTypes.STRING,
+    },
+  });
+  return komik;
+};
